@@ -1,0 +1,42 @@
+Host *
+ServerAliveInterval 30
+
+Host do
+Hostname 139.59.42.84
+User root
+Port 22
+IdentityFile ~/.ssh/do_rsa
+
+Host js
+Hostname 153.92.45.133
+User root
+IdentityFile ~/.ssh/do_rsa
+
+Host ali
+Hostname 120.24.38.217
+User root
+IdentityFile ~/.ssh/ali_rsa
+
+Host bii2
+Hostname 172.18.11.10
+User yuntao_chen
+IdentityFile ~/.ssh/bii_rsa
+
+Host forward
+Hostname 2001:cc0:2020:4008:8e3a:419f:2ade:3e8
+User pi
+RemoteForward 127.0.0.1:4433 127.0.0.1:4433
+IdentityFile ~/.ssh/pi_rsa
+
+Host pi
+Hostname 2001:cc0:2020:4008:8e3a:419f:2ade:3e8
+User pi
+IdentityFile ~/.ssh/pi_rsa
+
+Hostname bitbucket.org
+User git
+IdentityFile ~/.ssh/bitbucket_rsa
+
+Hostname github.com
+User git
+IdentityFile ~/.ssh/git_rsa
